@@ -1,0 +1,11 @@
+const mongoose = require("mongoose");
+// mongoose.connect("mongodb://0.0.0.0:27017/school");
+
+mongoose.connect("mongodb://0.0.0.0:27017/school").then(
+  () => {
+    console.log("Database Connected...");
+  },
+  (error) => {
+    console.log("Database can not connected: " + error);
+  }
+);
